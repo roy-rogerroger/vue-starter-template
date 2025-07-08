@@ -1,5 +1,5 @@
 <template>
-  <Button>
+  <Button :label="label">
     <template #icon>
       <slot name="icon" />
     </template>
@@ -8,6 +8,14 @@
 
 <script setup lang="ts">
 import { Button } from 'primevue'
+import { toRefs } from 'vue'
+
+interface Props {
+  label?: string
+}
+
+const props = defineProps<Props>()
+const { label } = toRefs(props)
 </script>
 
 <style lang="postcss">
@@ -30,4 +38,3 @@ import { Button } from 'primevue'
   }
 }
 </style>
-
