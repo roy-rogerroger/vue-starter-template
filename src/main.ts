@@ -1,4 +1,4 @@
-import '@/shared/assets/css/main.css'
+import '@/shared/assets/css/main.scss'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import PrimeVue from 'primevue/config'

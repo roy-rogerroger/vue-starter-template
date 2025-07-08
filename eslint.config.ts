@@ -1,3 +1,6 @@
+// For more info, see https://github.com/storybookjs/eslint-plugin-storybook#configuration-flat-config-format
+import storybook from 'eslint-plugin-storybook'
+
 import { globalIgnores } from 'eslint/config'
 import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
 import pluginVue from 'eslint-plugin-vue'
@@ -20,6 +23,7 @@ export default defineConfigWithVueTs(
   vueTsConfigs.recommended,
   skipFormatting,
   {
-    rules: { 'vue/multi-word-component-names': 'off' },
+    rules: { 'vue/multi-word-component-names': 'off', '@typescript-eslint/no-explicit-any': 'off' },
   },
+  ...storybook.configs['flat/recommended'],
 )

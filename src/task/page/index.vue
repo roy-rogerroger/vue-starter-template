@@ -1,6 +1,4 @@
 <template>
-  <h1>Tasks</h1>
-
   <Button label="Title" />
 </template>
 
