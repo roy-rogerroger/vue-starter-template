@@ -2,11 +2,11 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
-Follwing libraries are installed by default:
+The following libraries are installed by default:
 - Pinia + Pinia ORM
 - TailwindCSS3 (no v4 yet)
 - PrimeVue with primeicons (https://primevue.org/icons)
-- Phosfor Icons (https://phosphoricons.com)
+- Phosphor Icons (https://phosphoricons.com)
 
 Code style guide:
 - Typescript
@@ -21,6 +21,7 @@ Folder structure:
   - api
   - assets (css, scss, image)
   - component
+  - composable (UseComposable.ts)
   - model (pinia orm models)
   - page
   - story (storybook, e.g. domain/story/component/MyComponent.stories.ts)
