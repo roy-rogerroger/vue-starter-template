@@ -1,39 +1,26 @@
-# vue-project
+# Vue Starter Template
 
 This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+Follwing libraries are installed by default:
+- Pinia + Pinia ORM
+- TailwindCSS3 (no v4 yet)
+- PrimeVue with primeicons (https://primevue.org/icons)
+- Phosfor Icons (https://phosphoricons.com)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Code style guide:
+- Typescript
+- Eslint
+- Prettier
 
-## Type Support for `.vue` Imports in TS
+Component:
+Every reusable component should have a storybook implementation.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Folder structure:
+- domain/{folder} (task, project, user, etc) or shared/{folder} (globally usable files go in shared)
+  - api
+  - assets (css, scss, image)
+  - component
+  - model (pinia orm models)
+  - page
+  - story (storybook, e.g. domain/story/component/MyComponent.stories.ts)

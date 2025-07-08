@@ -18,7 +18,7 @@ export default defineConfig({
       routesFolder: [
         {
           src: 'src/task/page',
-          path: 'task/',
+          path: '/',
         },
       ],
     }),

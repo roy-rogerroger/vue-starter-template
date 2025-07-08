@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import Icon from '@/shared/component/misc/Icon.vue'
-import RobotIcon from '@/shared/svg/icon/RobotIcon.vue'
+import RobotIcon from '@/shared/component/svg/icon/RobotIcon.vue'
 
 const meta: Meta<typeof Icon> = {
   title: 'Component/Icon',
