@@ -6,6 +6,9 @@ const meta: Meta<typeof Button> = {
   component: Button,
   tags: ['autodocs'],
   argTypes: {
+    label: {
+      control: 'text',
+    },
     icon: {
       description: 'Custom icon to display in the button',
       control: 'text',
@@ -17,14 +20,16 @@ export default meta
 type Story = StoryObj<typeof Button>
 
 export const Default: Story = {
-  args: {},
+  args: {
+    label: 'Button Text',
+  },
   render: (args) => ({
     components: { Button },
     setup() {
       return { args }
     },
     template: `
-      <Button v-bind="args" label="Button Text" />
+      <Button v-bind="args" />
     `,
   }),
 }
