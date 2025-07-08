@@ -1,8 +1,8 @@
-import type { Meta, StoryObj } from '@storybook/vue3'
+import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import Button from '@/shared/component/button/Button.vue'
 
 const meta: Meta<typeof Button> = {
-  title: 'Components/Button',
+  title: 'Component/Button',
   component: Button,
   tags: ['autodocs'],
   argTypes: {
@@ -36,11 +36,10 @@ export const WithIcon: Story = {
       return { args }
     },
     template: `
-      <Button v-bind="args">
+      <Button v-bind="args" label="Button with Icon">
         <template #icon>
           <span class="pi pi-check"></span>
         </template>
-        Button with Icon
       </Button>
     `,
   }),
